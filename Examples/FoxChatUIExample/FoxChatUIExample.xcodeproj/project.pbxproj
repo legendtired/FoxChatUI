@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47D86B2C1ADD7D190064AC3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B2B1ADD7D190064AC3C /* main.m */; };
+		47D86B2F1ADD7D190064AC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B2E1ADD7D190064AC3C /* AppDelegate.m */; };
+		47D86B321ADD7D190064AC3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B311ADD7D190064AC3C /* ViewController.m */; };
+		47D86B351ADD7D190064AC3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B331ADD7D190064AC3C /* Main.storyboard */; };
+		47D86B371ADD7D190064AC3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B361ADD7D190064AC3C /* Images.xcassets */; };
+		47D86B3A1ADD7D190064AC3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B381ADD7D190064AC3C /* LaunchScreen.xib */; };
+		47D86B461ADD7D190064AC3C /* FoxChatUIExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B451ADD7D190064AC3C /* FoxChatUIExampleTests.m */; };
+		47D86B521ADD87E60064AC3C /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B501ADD87E60064AC3C /* avatar@2x.png */; };
+		47D86B531ADD87E60064AC3C /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B511ADD87E60064AC3C /* button@2x.png */; };
+		47D86B551ADD8DB90064AC3C /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B541ADD8DB90064AC3C /* chat@2x.png */; };
+		47D86B581ADDB33D0064AC3C /* FoxChatUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47D86B561ADDB33D0064AC3C /* FoxChatUI.bundle */; };
+		47D86B591ADDB33D0064AC3C /* FoxChatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D86B571ADDB33D0064AC3C /* FoxChatUI.framework */; };
+		47D86B5B1ADDB4270064AC3C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D86B5A1ADDB4270064AC3C /* AVFoundation.framework */; };
+		47D86B5D1ADDB4320064AC3C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D86B5C1ADDB4320064AC3C /* MapKit.framework */; };
+		47D86B5F1ADDB43B0064AC3C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D86B5E1ADDB43B0064AC3C /* AudioToolbox.framework */; };
+		47D86B611ADDB4440064AC3C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D86B601ADDB4440064AC3C /* libz.dylib */; };
+		47D86B631ADDB44D0064AC3C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D86B621ADDB44D0064AC3C /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47D86B401ADD7D190064AC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D86B1E1ADD7D190064AC3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D86B251ADD7D190064AC3C;
+			remoteInfo = FoxChatUIExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47D86B261ADD7D190064AC3C /* FoxChatUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoxChatUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D86B2A1ADD7D190064AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D86B2B1ADD7D190064AC3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47D86B2D1ADD7D190064AC3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47D86B2E1ADD7D190064AC3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47D86B301ADD7D190064AC3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		47D86B311ADD7D190064AC3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47D86B341ADD7D190064AC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47D86B361ADD7D190064AC3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		47D86B391ADD7D190064AC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		47D86B3F1ADD7D190064AC3C /* FoxChatUIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxChatUIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D86B441ADD7D190064AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D86B451ADD7D190064AC3C /* FoxChatUIExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoxChatUIExampleTests.m; sourceTree = "<group>"; };
+		47D86B501ADD87E60064AC3C /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
+		47D86B511ADD87E60064AC3C /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
+		47D86B541ADD8DB90064AC3C /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat@2x.png"; sourceTree = "<group>"; };
+		47D86B561ADDB33D0064AC3C /* FoxChatUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FoxChatUI.bundle; path = ../../../FoxChatUI.bundle; sourceTree = "<group>"; };
+		47D86B571ADDB33D0064AC3C /* FoxChatUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoxChatUI.framework; path = ../../../FoxChatUI.framework; sourceTree = "<group>"; };
+		47D86B5A1ADDB4270064AC3C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		47D86B5C1ADDB4320064AC3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		47D86B5E1ADDB43B0064AC3C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		47D86B601ADDB4440064AC3C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		47D86B621ADDB44D0064AC3C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47D86B231ADD7D190064AC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D86B631ADDB44D0064AC3C /* libsqlite3.0.dylib in Frameworks */,
+				47D86B611ADDB4440064AC3C /* libz.dylib in Frameworks */,
+				47D86B5F1ADDB43B0064AC3C /* AudioToolbox.framework in Frameworks */,
+				47D86B5D1ADDB4320064AC3C /* MapKit.framework in Frameworks */,
+				47D86B5B1ADDB4270064AC3C /* AVFoundation.framework in Frameworks */,
+				47D86B591ADDB33D0064AC3C /* FoxChatUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D86B3C1ADD7D190064AC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47D86B1D1ADD7D190064AC3C = {
+			isa = PBXGroup;
+			children = (
+				47D86B621ADDB44D0064AC3C /* libsqlite3.0.dylib */,
+				47D86B601ADDB4440064AC3C /* libz.dylib */,
+				47D86B5E1ADDB43B0064AC3C /* AudioToolbox.framework */,
+				47D86B5C1ADDB4320064AC3C /* MapKit.framework */,
+				47D86B5A1ADDB4270064AC3C /* AVFoundation.framework */,
+				47D86B281ADD7D190064AC3C /* FoxChatUIExample */,
+				47D86B421ADD7D190064AC3C /* FoxChatUIExampleTests */,
+				47D86B271ADD7D190064AC3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47D86B271ADD7D190064AC3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D86B261ADD7D190064AC3C /* FoxChatUIExample.app */,
+				47D86B3F1ADD7D190064AC3C /* FoxChatUIExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47D86B281ADD7D190064AC3C /* FoxChatUIExample */ = {
+			isa = PBXGroup;
+			children = (
+				47D86B2D1ADD7D190064AC3C /* AppDelegate.h */,
+				47D86B2E1ADD7D190064AC3C /* AppDelegate.m */,
+				47D86B301ADD7D190064AC3C /* ViewController.h */,
+				47D86B311ADD7D190064AC3C /* ViewController.m */,
+				47D86B331ADD7D190064AC3C /* Main.storyboard */,
+				47D86B361ADD7D190064AC3C /* Images.xcassets */,
+				47D86B381ADD7D190064AC3C /* LaunchScreen.xib */,
+				47D86B561ADDB33D0064AC3C /* FoxChatUI.bundle */,
+				47D86B571ADDB33D0064AC3C /* FoxChatUI.framework */,
+				47D86B4F1ADD87E60064AC3C /* Resources */,
+				47D86B291ADD7D190064AC3C /* Supporting Files */,
+			);
+			path = FoxChatUIExample;
+			sourceTree = "<group>";
+		};
+		47D86B291ADD7D190064AC3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47D86B2A1ADD7D190064AC3C /* Info.plist */,
+				47D86B2B1ADD7D190064AC3C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47D86B421ADD7D190064AC3C /* FoxChatUIExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D86B451ADD7D190064AC3C /* FoxChatUIExampleTests.m */,
+				47D86B431ADD7D190064AC3C /* Supporting Files */,
+			);
+			path = FoxChatUIExampleTests;
+			sourceTree = "<group>";
+		};
+		47D86B431ADD7D190064AC3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47D86B441ADD7D190064AC3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47D86B4F1ADD87E60064AC3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47D86B501ADD87E60064AC3C /* avatar@2x.png */,
+				47D86B511ADD87E60064AC3C /* button@2x.png */,
+				47D86B541ADD8DB90064AC3C /* chat@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47D86B251ADD7D190064AC3C /* FoxChatUIExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D86B491ADD7D190064AC3C /* Build configuration list for PBXNativeTarget "FoxChatUIExample" */;
+			buildPhases = (
+				47D86B221ADD7D190064AC3C /* Sources */,
+				47D86B231ADD7D190064AC3C /* Frameworks */,
+				47D86B241ADD7D190064AC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoxChatUIExample;
+			productName = FoxChatUIExample;
+			productReference = 47D86B261ADD7D190064AC3C /* FoxChatUIExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47D86B3E1ADD7D190064AC3C /* FoxChatUIExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D86B4C1ADD7D190064AC3C /* Build configuration list for PBXNativeTarget "FoxChatUIExampleTests" */;
+			buildPhases = (
+				47D86B3B1ADD7D190064AC3C /* Sources */,
+				47D86B3C1ADD7D190064AC3C /* Frameworks */,
+				47D86B3D1ADD7D190064AC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D86B411ADD7D190064AC3C /* PBXTargetDependency */,
+			);
+			name = FoxChatUIExampleTests;
+			productName = FoxChatUIExampleTests;
+			productReference = 47D86B3F1ADD7D190064AC3C /* FoxChatUIExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47D86B1E1ADD7D190064AC3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = foxim;
+				TargetAttributes = {
+					47D86B251ADD7D190064AC3C = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					47D86B3E1ADD7D190064AC3C = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 47D86B251ADD7D190064AC3C;
+					};
+				};
+			};
+			buildConfigurationList = 47D86B211ADD7D190064AC3C /* Build configuration list for PBXProject "FoxChatUIExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47D86B1D1ADD7D190064AC3C;
+			productRefGroup = 47D86B271ADD7D190064AC3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47D86B251ADD7D190064AC3C /* FoxChatUIExample */,
+				47D86B3E1ADD7D190064AC3C /* FoxChatUIExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47D86B241ADD7D190064AC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D86B351ADD7D190064AC3C /* Main.storyboard in Resources */,
+				47D86B581ADDB33D0064AC3C /* FoxChatUI.bundle in Resources */,
+				47D86B521ADD87E60064AC3C /* avatar@2x.png in Resources */,
+				47D86B531ADD87E60064AC3C /* button@2x.png in Resources */,
+				47D86B3A1ADD7D190064AC3C /* LaunchScreen.xib in Resources */,
+				47D86B551ADD8DB90064AC3C /* chat@2x.png in Resources */,
+				47D86B371ADD7D190064AC3C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D86B3D1ADD7D190064AC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47D86B221ADD7D190064AC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D86B321ADD7D190064AC3C /* ViewController.m in Sources */,
+				47D86B2F1ADD7D190064AC3C /* AppDelegate.m in Sources */,
+				47D86B2C1ADD7D190064AC3C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D86B3B1ADD7D190064AC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D86B461ADD7D190064AC3C /* FoxChatUIExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47D86B411ADD7D190064AC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D86B251ADD7D190064AC3C /* FoxChatUIExample */;
+			targetProxy = 47D86B401ADD7D190064AC3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47D86B331ADD7D190064AC3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D86B341ADD7D190064AC3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47D86B381ADD7D190064AC3C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D86B391ADD7D190064AC3C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47D86B471ADD7D190064AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47D86B481ADD7D190064AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47D86B4A1ADD7D190064AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/share/ios/Pods/FoxChatUI,
+				);
+				INFOPLIST_FILE = FoxChatUIExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47D86B4B1ADD7D190064AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/share/ios/Pods/FoxChatUI,
+				);
+				INFOPLIST_FILE = FoxChatUIExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47D86B4D1ADD7D190064AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoxChatUIExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxChatUIExample.app/FoxChatUIExample";
+			};
+			name = Debug;
+		};
+		47D86B4E1ADD7D190064AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoxChatUIExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxChatUIExample.app/FoxChatUIExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47D86B211ADD7D190064AC3C /* Build configuration list for PBXProject "FoxChatUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D86B471ADD7D190064AC3C /* Debug */,
+				47D86B481ADD7D190064AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D86B491ADD7D190064AC3C /* Build configuration list for PBXNativeTarget "FoxChatUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D86B4A1ADD7D190064AC3C /* Debug */,
+				47D86B4B1ADD7D190064AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D86B4C1ADD7D190064AC3C /* Build configuration list for PBXNativeTarget "FoxChatUIExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D86B4D1ADD7D190064AC3C /* Debug */,
+				47D86B4E1ADD7D190064AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D86B1E1ADD7D190064AC3C /* Project object */;
+}
