@@ -52,6 +52,24 @@ typedef NS_ENUM(NSInteger, FCCoordType) {
     FCCoordTypeBD09
 };
 
+typedef NS_OPTIONS(NSUInteger, FCLogFlag) {
+    FCLogFlagError      = (1 << 0), // 0...00001
+    FCLogFlagWarning    = (1 << 1), // 0...00010
+    FCLogFlagInfo       = (1 << 2), // 0...00100
+    FCLogFlagDebug      = (1 << 3), // 0...01000
+    FCLogFlagVerbose    = (1 << 4)  // 0...10000
+};
+
+typedef NS_ENUM(NSUInteger, FCLogLevel) {
+    FCLogLevelOff       = 0,
+    FCLogLevelError     = (FCLogFlagError),                       // 0...00001
+    FCLogLevelWarning   = (FCLogLevelError   | FCLogFlagWarning), // 0...00011
+    FCLogLevelInfo      = (FCLogLevelWarning | FCLogFlagInfo),    // 0...00111
+    FCLogLevelDebug     = (FCLogLevelInfo    | FCLogFlagDebug),   // 0...01111
+    FCLogLevelVerbose   = (FCLogLevelDebug   | FCLogFlagVerbose), // 0...11111
+    FCLogLevelAll       = NSUIntegerMax                           // 1111....11111
+};
+
 @interface FCApp : NSObject
 @property (readonly) NSString *appid;
 @property (readonly) NSString *name;
@@ -159,20 +177,43 @@ typedef NS_ENUM(NSInteger, FCCoordType) {
 @end
 
 
+
+
 @interface FoxChat : NSObject
 
+/** 当前的app信息，包括appid, name等 */
 @property (readonly) FCApp *app;
+
+/** 当前app的主题信息 */
 @property (nonatomic, readonly) NSDictionary *theme;
+
+/** 当前登录用户信息 */
 @property (nonatomic, readonly) FCUser *user;
+
+/** 当前登录用户的设置，比如消息提醒设置 */
 @property (readonly) NSDictionary *userSettings;
+
+/** 当前登录用户的联系人列表，从内存中获取 */
 @property (readonly) NSArray *contacts;
+
+/** 当前登录用户的群聊列表，从内存中获取 */
 @property (readonly) NSArray *groups;
+
+/** 当前登录用户的未读消息数目 */
 @property (readonly) NSUInteger unreadMessagesCount;
+
+/** 当前登录用户的会话列表 */
 @property (readonly) NSArray *conversionsList;
+
+/** 登录状态 */
 @property (readonly, getter=isConnected) BOOL connected;
+
+/** 是否自动登录，如果是，则会使用上此登录的用户名和密码登录自动登录 */
+@property (nonatomic, assign) BOOL autoLogin;
+
+/** 版本号 */
 @property (readonly, copy) NSString *version;
 
-@property (nonatomic) BOOL autoLogin;
 
 /**
  *  FoxChat为单例模式
@@ -197,6 +238,13 @@ typedef NS_ENUM(NSInteger, FCCoordType) {
  */
 + (void)setAppid:(NSString *)appid autoLogin:(BOOL)autoLogin;
 
+/**
+ *  设置日志级别
+ *
+ *  @param logLevel 日志级别
+ *  @see FCLogLevel
+ */
++ (void)setLogLevel:(FCLogLevel)logLevel;
 
 /**
  *  添加和删除委托，FoxChat对象允许多个委托
@@ -240,11 +288,12 @@ typedef NS_ENUM(NSInteger, FCCoordType) {
 - (BOOL)isConnected;
 
 /**
- *  注册用户推送通知的Device Token
+ *  注册用户推送通知的Device Token并指定使用的证书类型
  *
- *  @param token ANPS DeviceToken
+ *  @param token      设备ID
+ *  @param isProduction 是否使用生产环境的推送证书，默认为NO，使用开发环境的推送证书，YES则使用生产环境的推送证书。程序发布前需要修改为YES
  */
-- (void)registerDeviceToken:(NSData *)token;
+- (void)registerDeviceToken:(NSData *)token isProduction:(BOOL)isProduction;
 
 
 /** 会话相关 */

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472173631ADEA45A00C08F5E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 472173621ADEA45A00C08F5E /* Default-568h@2x.png */; };
 		47D86B2C1ADD7D190064AC3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B2B1ADD7D190064AC3C /* main.m */; };
 		47D86B2F1ADD7D190064AC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B2E1ADD7D190064AC3C /* AppDelegate.m */; };
 		47D86B321ADD7D190064AC3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D86B311ADD7D190064AC3C /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		472173621ADEA45A00C08F5E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "FoxChatUIExample/Default-568h@2x.png"; sourceTree = "<group>"; };
 		47D86B261ADD7D190064AC3C /* FoxChatUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoxChatUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D86B2A1ADD7D190064AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D86B2B1ADD7D190064AC3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		47D86B1D1ADD7D190064AC3C = {
 			isa = PBXGroup;
 			children = (
+				472173621ADEA45A00C08F5E /* Default-568h@2x.png */,
 				47D86B621ADDB44D0064AC3C /* libsqlite3.0.dylib */,
 				47D86B601ADDB4440064AC3C /* libz.dylib */,
 				47D86B5E1ADDB43B0064AC3C /* AudioToolbox.framework */,
@@ -248,6 +251,7 @@
 				47D86B521ADD87E60064AC3C /* avatar@2x.png in Resources */,
 				47D86B531ADD87E60064AC3C /* button@2x.png in Resources */,
 				47D86B3A1ADD7D190064AC3C /* LaunchScreen.xib in Resources */,
+				472173631ADEA45A00C08F5E /* Default-568h@2x.png in Resources */,
 				47D86B551ADD8DB90064AC3C /* chat@2x.png in Resources */,
 				47D86B371ADD7D190064AC3C /* Images.xcassets in Resources */,
 			);
@@ -347,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -384,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -6,7 +6,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FoxChatUI"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "FoxChat SDK UI版本"
   s.homepage     = "http://foxchat.im"
   s.screenshots  = "http://foxchat.im/img/doc/sc1.png", "http://foxchat.im/img/doc/sc2.png", "http://foxchat.im/img/doc/sc3.png"

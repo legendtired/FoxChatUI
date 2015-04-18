@@ -28,6 +28,14 @@ FOUNDATION_EXPORT const unsigned char FoxChatUIVersionString[];
 + (FoxChatUI *)sharedInstance;
 
 /**
+ *  设置日志级别
+ *
+ *  @param logLevel 日志级别
+ *  @see FCLogLevel
+ */
++ (void)setLogLevel:(FCLogLevel)logLevel;
+
+/**
  *  静态方法，设置appid和是否自动登录
  *
  *  @param appid     开发者后台获取的appid
@@ -36,11 +44,13 @@ FOUNDATION_EXPORT const unsigned char FoxChatUIVersionString[];
 + (void)setAppid:(NSString *)appid autoLogin:(BOOL)autoLogin;
 
 /**
- *  注册用户推送通知的Device Token
+ *  注册用户推送通知的Device Token并指定使用的证书类型
  *
- *  @param token ANPS DeviceToken
+ *  @param token      设备ID
+ *  @param isProduction 是否使用生产环境的推送证书，默认为NO，使用开发环境的推送证书，YES则使用生产环境的推送证书。程序发布前需要修改为YES
  */
-- (void)registerDeviceToken:(NSData *)token;
+- (void)registerDeviceToken:(NSData *)token isProduction:(BOOL)isProduction;
+
 
 /**
  *  设置用户名或密码并登录到服务器
